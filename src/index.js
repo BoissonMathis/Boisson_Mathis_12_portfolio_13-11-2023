@@ -1,17 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { home, booki, bluel, ohmyfood, alafrancaise, palettedugout, noteenchantee, delicedessens } from "./routes/routes";
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+// import Header from "./components/Header/Header.js"
+// import Nav from "./components/Nav/Nav.js"
+import Footer from "./components/Footer/Footer.js"
+import Home from './pages/Home/App.jsx'
+import Bluel from './pages/bluel/bluel.jsx'
+import Booki from './pages/booki/booki.jsx'
+import Ohmyfood from './pages/ohmyfood/ohmyfood.jsx'
+import Alafrancaise from './pages/ohmyfood/restaurants/alafrancaise.jsx'
+import Palettedugout from './pages/ohmyfood/restaurants/palettedugout.jsx'
+import Noteenchantee from './pages/ohmyfood/restaurants/noteenchantee.jsx'
+import Delicedessens from './pages/ohmyfood/restaurants/delicedessens.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path={home} />
+        <Route element={<Bluel />} path={bluel} /> 
+        <Route element={<Booki />} path={booki} /> 
+        <Route element={<Ohmyfood />} path={ohmyfood} />
+        <Route element={<Alafrancaise />} path={alafrancaise} />
+        <Route element={<Palettedugout />} path={palettedugout} />
+        <Route element={<Noteenchantee />} path={noteenchantee} />
+        <Route element={<Delicedessens />} path={delicedessens} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

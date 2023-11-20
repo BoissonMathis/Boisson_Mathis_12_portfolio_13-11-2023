@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    position: absolute;
+    padding-right: 3vw;
+    height: 6vh;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #55E2F6;
+    gap: 3vw;
+}
+    
+.nav a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+
+.nav p {
+    font-size: 20px;
+    color: white;
+}
+
+#navGithub {
+    font-size: 25px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.absolute {
+    position: absolute;
+    top: 94vh;
+}

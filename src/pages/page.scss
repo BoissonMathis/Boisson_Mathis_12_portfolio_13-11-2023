@@ -1,0 +1,392 @@
+html{scroll-behavior:smooth}
+
+#app {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
+    width: auto;
+}
+
+
+.retour-accueil i {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    color: #A5F0FF;
+}
+
+.retour-accueil {
+    height: 2vh;
+}
+
+// home
+.home {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.home h1 {
+    display: flex;
+    align-self: center;
+}
+
+.home h3 {
+    font-size: 24px;
+    padding: 0px;
+}
+
+.home h4 {
+    font-size: 18px;
+}
+
+.home section {
+    margin: 0px;
+}
+
+.integrationWeb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #D6F8FF;
+    padding: 3vw;
+}
+
+.fa-github {
+    font-size: 20px;
+    color: black;
+}
+
+.integrationTitle {
+    position: relative;
+    top: 18vh;
+    left: 5vw;
+    height: fit-content;
+}
+
+.abilities {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    padding: 2vh;
+}
+
+.abilitiesTitle {
+    justify-self: flex-end;
+    align-self: center;
+    grid-row: 1/3;
+    grid-column: 3;
+}
+
+.abilitiesLangage {
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/3;
+    grid-column: 1;
+}
+
+.abilitiesOptimisation {
+    justify-self: center;
+    align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.abilitiesMaintenance {
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
+.abilities ul {
+    width: 20vw;
+}
+
+.abilities h3 {
+    width: 20vw;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6F8FF;
+    padding: 3vw;
+}
+
+.aboutMe p {
+    align-self: center;
+    line-height: 3vh;
+}
+
+.aboutTitle {
+    padding-left: 5vw;
+}
+
+.contactMe {
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactTitle {
+    display: flex;
+    align-self: center;
+}
+
+.contactForm {
+    border: solid #A5F0FF 1px;
+    background-color: #A5F0FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 50vw;
+    gap: 2vh;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.contactForm a {
+    text-decoration: none;
+}
+
+.formInput {
+    border: 2px solid #A5F0FF;
+    background-color: #F3FDFF;
+    border-radius: 1vh;
+}
+
+.formLabel {
+    width: auto;
+}
+
+#messageForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 12vh;
+}
+
+#subjectForm {
+    width: 20vw;
+}
+
+.formSubmit {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 8vw;
+    height: 3vh;
+    color: black;
+    background-color: #D6F8FF;
+    border: 2px solid #A5F0FF;
+    border-radius: 1vh;
+}
+
+@media (min-width: 1600px) {
+    .integrationWeb {
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #app h1 {
+        font-size: 32px;
+    }
+
+    #app h2 {
+        font-size: 28px;
+    }
+
+    #app h3 {
+        font-size: 24px;
+    }
+
+    #app h4 {
+        font-size: 20px;
+    }
+
+    .integrationWeb {
+        flex-direction: column;
+    }
+
+    .integrationTitle {
+        align-self: center;
+        position: unset;
+    }
+
+    .carrousel {
+        align-self: center;
+        width: 550px;
+        height: 300px;
+    }
+
+    .sliderImage {
+        width: 550px;
+    }
+
+    .projectSkills{
+        left: 58px;
+    }
+
+    .abilities h3 {
+        width: auto;
+    }
+
+    .abilities {
+        grid-template-columns: repeat(2, 45vw);
+    }
+
+    .abilitiesTitle {
+        grid-row: 1;
+        grid-column: 1/3;
+        justify-self: center;
+    }
+
+    .abilitiesLangage {
+        grid-row: 2/4;
+
+    }
+
+    .abilitiesOptimisation {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    #app {
+        width: 100%;
+    }
+
+    #app a{
+        font-size: 14px;
+    }
+
+    #app p {
+        font-size: 14px;
+    }
+
+    #app h1 {
+        font-size: 28px;
+    }
+
+    #app h2 {
+        font-size: 24px;
+    }
+
+    #app h3{
+        font-size: 20px;
+    }
+
+    #app h4{
+        font-size: 16px;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .presentation {
+        grid-template-rows: repeat(7, 20vw);
+    }
+
+    .preOne {
+        grid-row: 1/3;
+        grid-column: 1/3; 
+    }
+
+    .preTwo {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    .preTree {
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+
+    .preFour {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+
+    .preFive {
+        grid-row: 7;
+        grid-column: 2;
+    }
+
+    .carrousel {
+        display: flex;
+        width: 350px;
+        height: 200px;
+    }
+    
+    .sliderImage {
+        width: 350px;
+    }
+
+    .projectscarrousel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projectSkills{
+        left: 18px;
+        bottom: 220px;
+    }
+
+    .context p {
+        height: 30px;
+    }
+
+    .abilities {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .abilitiesMaintenance {
+        display: flex;
+        flex-direction: column;
+        width: 235px;
+    }
+
+    .abilities ul {
+        justify-self: flex-start;
+    }
+
+    .aboutMe {
+        display: flex;
+    }
+
+    .contactForm {
+        gap: 0px;
+        padding: 1vh;
+        width: 27vh;
+    }
+
+    #messageForm {
+        height: 6vh;
+        width: 100%;
+    }
+
+    #subjectForm {
+        width: 100%;
+    }
+
+    .formSubmit {
+        width: auto;
+        padding: 0vh 1vh 0vh 1vh;
+    }
+}

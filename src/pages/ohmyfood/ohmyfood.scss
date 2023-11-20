@@ -1,0 +1,680 @@
+html{
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+}
+
+.ohmyfood {
+    width: 100%;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.loader{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 2210px;
+    padding-top: 20%;
+
+    font-family: 'Shrikhand';
+    background-color: #F7F7F7;
+
+    z-index: 1;
+
+    animation: loaderdown 0.1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes loaderdown{
+    100%{
+        width: 0px;
+        height: 0px;
+        font-size: 0px;
+        overflow: hidden;
+    }
+}
+
+.loader p{
+    color: black;
+    font-size: 30px;
+    display: flex;
+}
+
+.oh {
+    /* top: 40px;
+    left: 120px; */
+    animation: loader infinite 0.3s alternate;
+}
+
+.my {
+    /* top: 40px;
+    left: 165px; */
+    animation: loader infinite 0.3s alternate;
+    animation-delay: 0.05s;
+}
+
+.food {
+    /* top: 40px;
+    left: 220px; */
+    animation: loader infinite 0.3s alternate;
+    animation-delay: 0.1s;
+}
+
+
+@keyframes loader {
+    
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+
+/****** header ******/
+
+/*logo*/
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+
+    padding: 14px;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header_logo img{
+    display: flex;
+
+    width: 128px;
+    height: 22px;
+}
+
+
+/*location*/
+
+.header_location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    background-color: #EAEAEA;
+}
+
+.header_location i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 18px;
+}
+
+
+.header_location p{
+    font-weight: 550;
+}
+
+
+/*navigation*/
+
+nav{
+    box-sizing: border-box;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+
+    background-color: #F7F7F7;
+
+    word-wrap: break-word;
+}
+
+.navigation h1, .navigation p{
+    display: block;
+	text-align: center;
+
+    margin: unset;
+}
+
+.navigation h1{
+    margin: 10% 10% 5% 10%;
+}
+
+.navigation p{
+    margin: 0% 5% 0% 5%;
+}
+
+.exploreButton{  
+    display: flex;
+	justify-content: center;
+
+    margin-bottom: 15%;
+    margin-top: 7%;
+}
+
+.button{
+    display: flex;
+
+    padding: 15px;
+
+    border-style: solid;
+	border-width: 1px;
+    border-radius: 39px;
+    border-color: transparent;
+
+	text-decoration: none;
+    color: white;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(to left, #9356DC, #FF79DA);
+
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.button:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.15);
+}
+
+.exploreButton:hover {
+	font-weight: 500;
+	border-width: 2px;
+    opacity: 0.9;
+}
+
+
+/*fonctionnement*/
+
+.functioning{
+    width: 100%;
+
+    padding-top: 10%;
+    margin-bottom: 20%;
+}
+
+.functioning h1{
+    margin-left: 5%;
+}
+
+.functioningContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 2%;
+    
+    gap: 20px;
+}
+
+.functioningArticle{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    width: 83%;
+    height: 10%;
+    gap: 7%;
+
+    margin: 0px;
+    padding: 15px 15px 15px 0px;
+
+    border: 1px solid #F7F7F7;
+    border-radius: 20px;
+
+    background-color: #F7F7F7;
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.functioningArticle:hover{
+    background-color: #F5EDFF;
+    border-color: #F5EDFF;
+    
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.functioningArticle i{
+    padding-top: 12px;
+
+    color: grey;
+
+    font-size: 18px;
+}
+
+.number{
+    position: relative;
+    right: 4%;
+    top: 8px;
+
+    height: 25px;
+    
+    padding: 0px 8px 0px 8px;
+
+    text-align: center;
+
+    color: white;
+
+    border: 1px solid #9356DC;
+    border-radius: 30px 30px 30px 30px;
+
+    background-color: #9356DC;
+}
+
+.number p{
+    margin: unset;
+    position: relative;
+    top: 1px;
+}
+
+
+/*restaurants*/
+
+.restaurants{
+    padding-top: 10%;
+    padding-bottom: 20%;
+
+    background-color: #F7F7F7;
+}
+
+.restaurants h1{
+    margin-left: 5%;
+}
+
+.restaurants-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 90%;
+    height: 250px;
+
+    padding: 0px;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card img {
+    object-fit: cover;
+
+    width: 100%;
+    height: 180px;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.new{
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    
+    padding: 4px 7px 4px 7px;
+    margin-top: 5%;
+
+    font-size: 13px;
+
+    background-color: #99E2D0;
+
+    border: 1px solid #99E2D0;
+    
+    color: #008766;
+}
+
+.new p{
+    margin: unset;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-txt{
+    color: black;
+
+    padding: 15px 0px 0px 10px;
+}
+
+.card-title{
+    margin: 0px 0px 5px 0px;
+}
+
+.card-subtitle{
+    margin: unset;
+}
+
+.card-like{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-right: 20px;
+
+    font-size: 24px;
+    color: black;
+}
+
+.card-like-container:active{
+    pointer-events: none;
+}                         
+
+
+.menu-like{
+    cursor: pointer;
+    position: relative;
+    font-size: 24px;
+}
+
+.like-on:hover{
+    font-weight: 900;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition-property: color;
+}
+
+/*footer*/
+
+.homyfoodFooter{
+   background-color: #353535;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.footer-logo img{
+    filter: invert(100%);
+
+    width: 112px;
+    height: 20px;
+}
+
+.homyfoodFooter ul{
+    list-style-type: none;
+
+    display: flex;
+}
+
+.homyfoodFooter i{
+    width: 20px;
+}
+
+.homyfoodFooter ul i{
+    padding-right: 10px;
+}
+
+.homyfoodFooter li{
+    color: white;
+
+    display: flex;
+
+    font-size: 15px;
+}
+
+.homyfoodFooter a{
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFF;
+    text-decoration: unset;
+    align-content: center;
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) and (min-width: 767px) {
+
+    /*navigation*/
+
+    html h1{
+        font-size: 22px;
+    }
+
+    html h2, p, li{
+        font-size: 14px;
+    }
+
+    .navigation h1{
+        font-size: 32px;
+    }
+
+    .navigation h1, .navigation p{
+        display: block;
+        text-align: center;
+
+        margin: unset;
+    }
+
+    .navigation h1{
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+
+    .exploreButton{  
+
+        margin-bottom: 5%;
+        margin-top: 4%;
+    }
+
+
+    /*fonctionnement*/
+
+    .functioning{
+        padding-top: 2%;
+        margin-bottom: 6%;
+    }
+
+    .functioning h1{
+        margin-left: 10%;
+    }
+
+    .functioningContent{
+        flex-direction: initial;
+        justify-content: center;
+
+        margin: 0% 2% 0% 2%;
+        
+        gap: 25px;
+    }
+
+    .functioningArticle{
+        width: 230px;
+        padding-right: unset;
+
+        gap: 3%;
+    }
+
+
+    /*restaurants*/
+
+    .restaurants{
+        padding-top: 2%;
+        padding-bottom: 6%;
+        background-color: #F7F7F7;
+    }
+
+    .restaurants h1{
+        margin-left: 5%;
+    }
+
+    .restaurants-content{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 300px;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .un{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .deux{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .trois{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .quatre{
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .new{
+        position: absolute;
+        right: 20px;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+}
+
+
+
+/* Large devices (desktop) */
+@media (min-width: 1025px) {
+
+    /*navigation*/
+
+    .navigation{
+        gap: unset;
+    }
+
+    .navigation h1{
+        font-size: 36px;
+    }
+
+    .navigation h1, .navigation p{
+        display: block;
+        text-align: center;
+        margin: unset;
+    }
+
+    .navigation h1{
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+    .exploreButton{  
+
+        margin-bottom: 3%;
+        margin-top: 2%;
+    }
+
+
+    /*fonctionnement*/
+
+    .functioning{
+        padding-top: 2%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+
+    .functioning h1{
+        margin-left: 10%;
+    }
+
+    .functioningContent{
+        flex-direction: initial;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .functioningArticle{
+        width: 335px;
+    }
+
+
+    /*restaurants*/
+
+    .restaurants{
+        padding-top: 2%;
+        padding-bottom: 6%;
+        background-color: #F7F7F7;
+    }
+
+    .restaurants h1{
+        margin-left: 10%;
+    }
+
+    .restaurants-content{
+        display: grid;
+        grid-template-rows: max-content;
+        grid-template-columns: max-content;
+        flex-direction: initial;
+        justify-content: center;
+        margin-left: 6%;
+        gap: 70px;
+    }
+
+    .un{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .deux{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .trois{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .quatre{
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .new{
+        position: absolute;
+        right: 20px;
+    }
+
+    .card{
+        width: 540px;
+        margin-right: 30px;
+    }
+}
