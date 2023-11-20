@@ -240,6 +240,8 @@ html {
 
   .integrationWeb {
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .integrationTitle {
@@ -248,17 +250,18 @@ html {
   }
 
   .carrousel {
-    align-self: center;
-    width: 550px;
+    width: 600px;
     height: 300px;
   }
 
   .sliderImage {
-    width: 550px;
+    width: 600px;
+    height: 300px;
   }
 
-  .projectSkills {
-    left: 58px;
+  .skill {
+    bottom: -40%;
+    left: 10%;
   }
 
   .abilities h3 {
@@ -351,27 +354,27 @@ html {
   }
 
   .carrousel {
-    display: flex;
-    width: 350px;
+    align-self: center;
+    width: 300px;
     height: 200px;
   }
 
   .sliderImage {
-    width: 350px;
+    width: 300px;
+    height: 200px;
   }
 
-  .projectscarrousel {
-    display: flex;
-    justify-content: center;
-  }
-
-  .projectSkills {
-    left: 5vw;
-    bottom: 20vh;
+  .skill {
+    bottom: -25%;
+    left: 12%;
   }
 
   .context p {
     height: 30px;
+  }
+
+  .gitHub {
+    align-self: center;
   }
 
   .abilities {

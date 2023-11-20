@@ -1,6 +1,5 @@
 export const home = "/";
 export const booki = "/booki";
-export const bluel = "/bluel";
 export const ohmyfood = "/ohmyfood";
 export const alafrancaise = "/ohmyfood/alafrancaise";
 export const delicedessens = "/ohmyfood/delicedessens";

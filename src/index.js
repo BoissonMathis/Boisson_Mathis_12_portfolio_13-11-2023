@@ -5,7 +5,6 @@ import { BrowserRouter } from "react-router-dom";
 import {
   home,
   booki,
-  bluel,
   ohmyfood,
   alafrancaise,
   palettedugout,
@@ -16,7 +15,6 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import Footer from "./components/Footer/Footer.js";
 import Home from "./pages/Home/App.jsx";
-import Bluel from "./pages/bluel/bluel.jsx";
 import Booki from "./pages/booki/booki.jsx";
 import Ohmyfood from "./pages/ohmyfood/ohmyfood.jsx";
 import Alafrancaise from "./pages/ohmyfood/restaurants/alafrancaise.jsx";
@@ -30,7 +28,6 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route element={<Home />} path={home} />
-        <Route element={<Bluel />} path={bluel} />
         <Route element={<Booki />} path={booki} />
         <Route element={<Ohmyfood />} path={ohmyfood} />
         <Route element={<Alafrancaise />} path={alafrancaise} />

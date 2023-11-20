@@ -9,6 +9,7 @@ function Projectscarrousel() {
   const roots = slides.map((slides) => slides.root);
   const setSrc = slides.map((slides) => slides.srcSet);
   const size = slides.map((slides) => slides.size);
+  const target = slides.map((slides) => slides.target)
   const nbSlide = slides.length;
 
   const nextCard = () => {
@@ -31,6 +32,7 @@ function Projectscarrousel() {
     <div>
       <div className="projectscarrousel">
         <div className="carrousel">
+        <p className="skill">{slides[index].langage}</p>
           <NavLink
             to={roots[index]}
             aria-label="redirect to the displayed project page"
@@ -41,6 +43,7 @@ function Projectscarrousel() {
               className="sliderImage"
               srcSet={setSrc[index]}
               sizes={size[index]}
+              target={target[index]}
             />
           </NavLink>
         </div>
@@ -89,9 +92,7 @@ function Projectscarrousel() {
             <i className="fa-brands fa-github"></i>
           </NavLink>
         </p>
-      </div>
-      <div className="projectSkills">
-        <p className="skill">{slides[index].langage}</p>
+        
       </div>
     </div>
   );
