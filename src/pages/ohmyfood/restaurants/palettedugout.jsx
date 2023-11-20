@@ -7,7 +7,7 @@ function Palettedugout() {
 
     return (
       <div>
-        <body>
+        <div>
     <div className="main-container">
 
         <div className="loader">
@@ -19,7 +19,7 @@ function Palettedugout() {
         <header className='restaurantHeader'>
 
             <div className="retour">
-                <NavLink to={'/ohmyfood'}>
+                <NavLink to={'/ohmyfood'} aria-label="go back to ohmyfood page">
                     <i className="fa-solid fa-arrow-left"></i>
                 </NavLink>
             </div>
@@ -221,7 +221,7 @@ function Palettedugout() {
 
         </main>
         </div>
-        </body>
+        </div>
     </div>
     );
 }

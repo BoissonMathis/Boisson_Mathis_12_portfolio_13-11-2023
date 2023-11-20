@@ -7,7 +7,7 @@ function Delicedessens() {
 
     return (
       <div>
-        <body>
+        <div>
     <div className="main-container">
 
         <div className="loader">
@@ -19,7 +19,7 @@ function Delicedessens() {
         <header className='restaurantHeader'>
 
             <div className="retour">
-                <NavLink to={'/ohmyfood'}>
+                <NavLink to={'/ohmyfood'} aria-label="go back to ohmyfood page">
                     <i className="fa-solid fa-arrow-left"></i>
                 </NavLink>
             </div>
@@ -204,7 +204,7 @@ function Delicedessens() {
 
         </main>
     </div>
-</body>
+</div>
       </div>
     );
   }

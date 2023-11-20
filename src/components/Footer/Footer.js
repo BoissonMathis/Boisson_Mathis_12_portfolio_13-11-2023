@@ -1,19 +1,22 @@
-import "./Footer.scss"
+import "./Footer.scss";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
-
-    return (
-      <div>
-        <div className="body">
-          <div className="footer">
-            <NavLink to='https://github.com/BoissonMathis?tab=repositories' target="_blank">
-              <i className="fa-brands fa-github" id="footerGithub"></i>
-            </NavLink>
-          </div>
+  return (
+    <div>
+      <div className="body">
+        <div className="footer">
+          <NavLink
+            to="https://github.com/BoissonMathis?tab=repositories"
+            target="_blank"
+            aria-label="go to my gitHub page"
+          >
+            <i className="fa-brands fa-github" id="footerGithub"></i>
+          </NavLink>
         </div>
       </div>
-    );
-  }
-  
-  export default Footer;
+    </div>
+  );
+}
+
+export default Footer;

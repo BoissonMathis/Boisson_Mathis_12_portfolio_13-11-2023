@@ -1,20 +1,19 @@
 import { NavLink } from "react-router-dom";
-import { home } from "../../routes/routes.js"
+import { home } from "../../routes/routes.js";
 
 function Bluel() {
-
-    return (
-      <div>
-        <div className="body">
-            <p>Sophie Bluel</p>
-          <div className="">
-            <NavLink to={home} className="">
-                <button>Accueil</button>
-            </NavLink>
-          </div>
+  return (
+    <div>
+      <div className="body">
+        <p>Sophie Bluel</p>
+        <div className="">
+          <NavLink to={home} className="">
+            <button>Accueil</button>
+          </NavLink>
         </div>
       </div>
-    );
-  }
-  
-  export default Bluel;
+    </div>
+  );
+}
+
+export default Bluel;
