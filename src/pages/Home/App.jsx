@@ -26,18 +26,18 @@ function Home() {
           </div>
 
           <div className="abilitiesLangage">
-            <h4>Langages de programmations</h4>
+            <h4>Langages de programmation</h4>
             <p>HTML/CSS - SCSS - SASS</p>
             <ul>
               <li>intégration complète</li>
               <li>animations</li>
-              <li>page structuré</li>
+              <li>page structurée</li>
             </ul>
             <p>JavaScript</p>
             <ul>
-              <li>géstion des intéractions utilisateurs</li>
+              <li>gestion des interactions utilisateurs</li>
               <li>mise en place des appels API</li>
-              <li>création de site dynamique</li>
+              <li>création de sites dynamiques</li>
             </ul>
             <p>React</p>
             <ul>
@@ -47,7 +47,7 @@ function Home() {
           </div>
 
           <div className="abilitiesOptimisation">
-            <h4>Optimisation de site/appli web</h4>
+            <h4>Optimisation de sites/applications web</h4>
             <ul>
               <li>SEO et référencement local</li>
               <li>optimisation du code et des performances</li>
@@ -59,7 +59,7 @@ function Home() {
             <h4>maintenance</h4>
             <ul>
               <li>débogage Réact/JS/HTML-CSS</li>
-              <li>supprétion/remplacement de code legacy</li>
+              <li>suppression/remplacement de code legacy</li>
               <li>mise à jour des plug-ins</li>
             </ul>
           </div>
@@ -71,16 +71,16 @@ function Home() {
           </div>
           <p>
             Je m'apelle Mathis Boisson, j'ai 23 ans, et je suis actuellement la
-            formation intégrateur de chez OpenClassRoom. <br />
-            Titulaire d'un bac STI2D SIN, je me suis dans un premier temp dirigé
+            formation intégrateur web de chez OpenClassRoom. <br />
+            Titulaire d'un bac STI2D SIN, je me suis dans un premier temps dirigé
             vers un BTS FED option Domotique que j'ai obtenu en 2022 aprés 2
             années d'alternance. <br />
-            Le métier ne me convenant pas vraiment, je prend la décision, en
+            Le métier ne me convenant pas vraiment, je prends la décision, en
             2023, de me réorienter vers un métier qui m'intéresse depuis mon
-            adolescence : le dévellopement web. <br />
-            Je commence donc ma démarche en m'insrivant à pole emploi, qui me
+            adolescence : le développement web. <br />
+            Je commence donc ma démarche en m'insrivant à pôle emploi, qui me
             propose un contrat engagement jeune et me finance ma formation
-            actuel.
+            actuelle.
           </p>
         </section>
 
