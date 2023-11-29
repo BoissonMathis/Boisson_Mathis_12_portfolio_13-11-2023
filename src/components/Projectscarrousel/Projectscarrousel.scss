@@ -6,6 +6,7 @@
 }
 
 .carrousel {
+  position: relative;
   width: 800px;
   height: 400px;
   border: solid #a5f0ff 2px;
@@ -47,8 +48,8 @@
 
 .skill {
   position: absolute;
-  bottom: -40%;
-  right: 35%;
+  bottom: 0px;
+  left: 2%;
   border: solid white 3px;
   padding: 8px;
   border-radius: 10px;
