@@ -15,7 +15,7 @@ export const slides = [
     root: "https://github.com/BoissonMathis/Boisson_Mathis_6_portfolio_sophie_bluelt_20-04-2023",
     srcSet: `${bluel350} 350w, ${bluel800} 800w, ${bluel1100} 1100w, ${bluel1420} 1420w, ${bluel1600} 1600w`,
     size: "(min-width: 1040px) 800px, (min-width: 620px) 550px, 350px",
-    target:"_blank"
+    target: "_blank",
   },
   {
     image: booki,
@@ -24,7 +24,7 @@ export const slides = [
     root: "/booki",
     srcSet: "",
     size: "",
-    target:""
+    target: "",
   },
   {
     image: ohmyfood,
@@ -33,6 +33,6 @@ export const slides = [
     root: "/ohmyfood",
     srcSet: "",
     size: "",
-    target:""
+    target: "",
   },
 ];

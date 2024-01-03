@@ -1,13 +1,10 @@
 import Carrousel from "../../components/Projectscarrousel/Projectscarrousel.js";
-import { useState } from "react";
 import Header from "../../components/Header/Header.js";
 import Nav from "../../components/Nav/Nav.js";
+import Contact from "../../components/Contactform/Contactform.js";
 import "../page.scss";
 
 function Home() {
-  const [mailtoBody, setMailtoBody] = useState("");
-  const [mailtoSubject, setMailtoSubject] = useState("");
-
   return (
     <div id="app">
       <Header />
@@ -56,7 +53,7 @@ function Home() {
           </div>
 
           <div className="abilitiesMaintenance">
-            <h4>maintenance</h4>
+            <h4>Maintenance</h4>
             <ul>
               <li>débogage Réact/JS/HTML-CSS</li>
               <li>suppression/remplacement de code legacy</li>
@@ -72,9 +69,9 @@ function Home() {
           <p>
             Je m'apelle Mathis Boisson, j'ai 23 ans, et je suis actuellement la
             formation intégrateur web de chez OpenClassRoom. <br />
-            Titulaire d'un bac STI2D SIN, je me suis dans un premier temps dirigé
-            vers un BTS FED option Domotique que j'ai obtenu en 2022 aprés 2
-            années d'alternance. <br />
+            Titulaire d'un bac STI2D SIN, je me suis dans un premier temps
+            dirigé vers un BTS FED option Domotique que j'ai obtenu en 2022
+            aprés 2 années d'alternance. <br />
             Le métier ne me convenant pas vraiment, je prends la décision, en
             2023, de me réorienter vers un métier qui m'intéresse depuis mon
             adolescence : le développement web. <br />
@@ -84,42 +81,7 @@ function Home() {
           </p>
         </section>
 
-        <section className="contactMe" id="contactMe">
-          <div className="contactTitle">
-            <h3>Me contacter</h3>
-          </div>
-          <form className="contactForm">
-            <label className="formLabel" htmlFor="subjectForm">
-              Sujet
-            </label>
-            <input
-              type="text"
-              className="subject formInput"
-              id="subjectForm"
-              onChange={(e) => setMailtoSubject(e.target.value)}
-            />
-            <label className="formLabel" htmlFor="messageForm">
-              Votre message
-            </label>
-            <textarea
-              className="message formInput"
-              id="messageForm"
-              onChange={(e) => setMailtoBody(e.target.value)}
-              aria-label="message"
-            />
-            <a
-              href={
-                "mailto:math.boiss@laposte.net?subject=" +
-                mailtoSubject +
-                "&body=" +
-                mailtoBody
-              }
-              aria-label="soumettre"
-            >
-              <p className="formSubmit">soumettre</p>
-            </a>
-          </form>
-        </section>
+        <Contact />
       </div>
     </div>
   );

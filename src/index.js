@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './utils/store.js'
 import {
   home,
   booki,
@@ -24,20 +26,22 @@ import Delicedessens from "./pages/ohmyfood/restaurants/delicedessens.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Home />} path={home} />
-        <Route element={<Booki />} path={booki} />
-        <Route element={<Ohmyfood />} path={ohmyfood} />
-        <Route element={<Alafrancaise />} path={alafrancaise} />
-        <Route element={<Palettedugout />} path={palettedugout} />
-        <Route element={<Noteenchantee />} path={noteenchantee} />
-        <Route element={<Delicedessens />} path={delicedessens} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </React.StrictMode>
+  <Provider store={store}>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Home />} path={home} />
+          <Route element={<Booki />} path={booki} />
+          <Route element={<Ohmyfood />} path={ohmyfood} />
+          <Route element={<Alafrancaise />} path={alafrancaise} />
+          <Route element={<Palettedugout />} path={palettedugout} />
+          <Route element={<Noteenchantee />} path={noteenchantee} />
+          <Route element={<Delicedessens />} path={delicedessens} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </React.StrictMode>
+  </Provider>
 );
 
 reportWebVitals();
