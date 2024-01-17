@@ -1,0 +1,22 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    // background-color: #d6f8ff;
+    background-color: #E3E7E7;
+    padding: 3vw;
+  }
+  
+  .aboutMe p {
+    align-self: center;
+    line-height: 3vh;
+  }
+  
+  .aboutTitle {
+    padding-left: 5vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    .aboutMe {
+        display: flex;
+      }
+  }

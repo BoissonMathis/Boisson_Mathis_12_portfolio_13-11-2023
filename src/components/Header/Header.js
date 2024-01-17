@@ -1,8 +1,8 @@
 import "./Header.scss";
 
-function Header() {
+export default function Header() {
+  
   return (
-    <div>
       <div className="header">
         <section className="presentation">
           <div className="preOne">
@@ -15,8 +15,5 @@ function Header() {
           <h3 className="preFive centered">Mise à jour d'appli/site web</h3>
         </section>
       </div>
-    </div>
   );
 }
-
-export default Header;

@@ -8,9 +8,7 @@ function Contactform() {
 
   const dispatch = useDispatch()
   const formCompleted = useSelector(state => state.contactStates.formCompleted)
-  console.log(formCompleted)
   const isVisible = useSelector(state => state.contactStates.isVisible)
-  console.log(isVisible)
   
   const [mailSubject, setMailSubject] = useState("");
   const [mailMessage, setMailMessage] = useState("");
