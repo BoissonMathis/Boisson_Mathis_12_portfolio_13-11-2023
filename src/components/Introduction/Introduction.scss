@@ -27,6 +27,7 @@
 .chibi {
   position: relative;
   top: 5vw;
+  height: 80vh;
 
   animation: 0.5s ease-in forwards come;
 }
@@ -119,10 +120,22 @@
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .chibi {
+    top: 30vh;
+    height: 58vh;
+  }
+
+  .startButton {
+    top: 15vh;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .startButton {
     font-size: 40px;
-    height: 10vh;
+    height: 13vh;
+    width: 15vh;
 
     top: 40vh;
   }
@@ -154,7 +167,12 @@
     display: none;
   }
 
+  .introduction {
+    align-content: center;
+  }
+
   .introductionText {
     font-size: 40px;
+    
   }
 }
