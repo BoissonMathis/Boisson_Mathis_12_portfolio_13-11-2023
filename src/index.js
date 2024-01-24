@@ -15,7 +15,6 @@ import {
 } from "./routes/routes";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-import Footer from "./components/Footer/Footer.js";
 import Home from "./pages/Home/App.jsx";
 import Booki from "./pages/booki/booki.jsx";
 import Ohmyfood from "./pages/ohmyfood/ohmyfood.jsx";
@@ -38,7 +37,6 @@ root.render(
           <Route element={<Noteenchantee />} path={noteenchantee} />
           <Route element={<Delicedessens />} path={delicedessens} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </React.StrictMode>
   </Provider>

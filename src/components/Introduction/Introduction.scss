@@ -1,27 +1,7 @@
 .welcome {
   box-sizing: border-box;
   background-color: black;
-  height: 95vh;
-}
-
-.startButton {
-  position: relative;
-  left: 20vw;
-  bottom: 10vh;
-  height: 15vh;
-  width: 15vw;
-  border-radius: 10px;
-  font-size: 70px;
-  opacity: 0;
-  z-index: 2;
-
-  transition: ease-in-out 0.3s;
-  animation: 1s ease-in 0.5s forwards appear;
-}
-
-.startButton:hover {
-  cursor: pointer;
-  scale: 1.2;
+  height: 100vh;
 }
 
 .chibi {
@@ -54,6 +34,24 @@
   transition: ease-in-out 0.3s;
 }
 
+.portal {
+  height: 45vh;
+  width: 40vh;
+  position: relative;
+  left: 20vw;
+  top: 20vh;
+  animation: 0.6s linear forwards portalAppear, 6s linear 0.6s infinite rotate;
+  transition: ease-in-out 0.3s;
+}
+
+.portal:hover {
+  scale: 1.2;
+}
+
+.portalScale {
+  animation: 1s linear forwards portalScale;
+}
+
 .visible {
   display: flex;
 }
@@ -71,13 +69,13 @@
     opacity: 1;
   }
   to {
-    transform: rotate(600deg);
-    opacity: 0;
+    transform: rotate(720deg);
+    opacity: 1;
   }
 }
 
 .disapear {
-  animation: 1s linear disapear;
+  animation: 0.3s linear disapear;
 }
 
 @keyframes disapear {
@@ -95,6 +93,40 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes portalAppear {
+  from{
+    width: 0vh;
+    height: 0vh;
+    border-radius: 50%;
+  }
+  to {
+    width: 1vh;
+    height: 1vh;
+    transform: rotate(180deg);
+  }to {
+    width: 35vh;
+    height: 39vh;
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+}
+
+@keyframes portalScale{
+  from{
+    left: 20vw;
+    top: 20vh;
+    scale: 1;
+    rotate:(0deg);
+    opacity: 1;
+  }to{
+    left: 40vw;
+    top: 20vh;
+    scale: 3;
+    rotate:(360deg);
+    opacity: 0;
   }
 }
 
@@ -126,22 +158,87 @@
     height: 58vh;
   }
 
-  .startButton {
-    top: 15vh;
+  .portal {
+    height: 45vh;
+    width: 40vh;
+    left: 20vw;
+    top: 30vh;
+  }
+
+  @keyframes come {
+    from {
+      left: 100vw;
+    }
+    to {
+      left: 30vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .chibi {
+    height: 40vh;
+    top: 45vh;
+  }
+
+  .introductionText {
+    font-size: 20px;
+  }
+
+  .introduction {
+    display: flex;
+    text-align: center;
+    width: 65vw;
+  }
+
+  @keyframes portalAppear {
+    from{
+      width: 0vh;
+      height: 0vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 1vh;
+      height: 1vh;
+      transform: rotate(180deg);
+    }to {
+      left: 15vh;
+      top: 45vh;
+      width: 35vh;
+      height: 40vh;
+    }
+  }
+
+  @keyframes portalScale{
+    from{
+      left: 20vw;
+      top: 20vh;
+      scale: 1;
+      rotate:(0deg);
+      opacity: 1;
+    }to{
+      left: 10vw;
+      top: 20vh;
+      scale: 3;
+      rotate:(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes come {
+    from {
+      left: 100vw;
+    }
+    to {
+      left: 25vw;
+    }
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .startButton {
-    font-size: 40px;
-    height: 13vh;
-    width: 15vh;
-
-    top: 40vh;
-  }
 
   .chibi {
-    height: 40vh;
+    height: 30vh;
     top: 50vh;
   }
 
@@ -154,13 +251,59 @@
     text-align: center;
     width: 65vw;
   }
+
+  @keyframes portalAppear {
+    from{
+      width: 0vh;
+      height: 0vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 1vh;
+      height: 1vh;
+      transform: rotate(180deg);
+    }to {
+      left: 10vh;
+      top: 50vh;
+      width: 20vh;
+      height: 25vh;
+    }
+  }
+
+  @keyframes portalScale{
+    from{
+      left: 20vw;
+      top: 20vh;
+      scale: 1;
+      rotate:(0deg);
+      opacity: 1;
+    }to{
+      left: 10vw;
+      top: 20vh;
+      scale: 3;
+      rotate:(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes come {
+    from {
+      left: 100vw;
+    }
+    to {
+      left: 20vw;
+    }
+  }
+}
+
+.leave {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .startButton {
-    top: 70vh;
-    left: 30vw;
-    width: 40vw;
+  .portal {
+    left: 20vw;
+    top: 60vh;
   }
 
   .chibi {
@@ -174,5 +317,37 @@
   .introductionText {
     font-size: 40px;
     
+  }
+
+  @keyframes portalAppear {
+    from{
+      width: 0vh;
+      height: 0vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 1vh;
+      height: 1vh;
+      transform: rotate(180deg);
+    }to {
+      width: 20vh;
+      height: 25vh;
+    }
+  }
+
+  @keyframes portalScale{
+    from{
+      left: 20vw;
+      top: 20vh;
+      scale: 1;
+      rotate:(0deg);
+      opacity: 1;
+    }to{
+      left: 0vw;
+      top: 30vh;
+      scale: 3;
+      rotate:(360deg);
+      opacity: 0;
+    }
   }
 }

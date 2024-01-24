@@ -6,6 +6,7 @@ import Contact from "../../components/Contactform/Contactform.js";
 import Aboutme from "../../components/Aboutme/Aboutme.js";
 import Abilities from "../../components/Abilities/Abilities.js";
 import Introduction from "../../components/Introduction/Introduction.js";
+import Footer from "../../components/Footer/Footer.js";
 import "../page.scss";
 
 function Home() {
@@ -35,6 +36,7 @@ function Home() {
 
           <Contact />
         </div>
+        <Footer />
       </div>
     );
   }
